@@ -12,6 +12,14 @@ FROM courses
 WHERE cfu > 10
 ---------------------------------------------3RD-QUERY--------------------------------------------------
 //Selezionare tutti gli studenti che hanno più di 30 anni//
+
+    ------PROVA------
+SELECT *
+FROM students
+WHERE date_of_birth BETWEEN "1995-03-06" AND "1996-03-06"
+
+    ------RISULTATO: 167------
+
 ---------------------------------------------4TH-QUERY--------------------------------------------------
 //Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)//
 
