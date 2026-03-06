@@ -36,5 +36,9 @@ FROM degrees
 WHERE level = "magistrale"
 ---------------------------------------------7TH-QUERY--------------------------------------------------
 //Da quanti dipartimenti è composta l'università? (12)//
+
+SELECT COUNT(id) AS `numero Dipartimenti`
+FROM departments
+WHERE name IS NOT NULL
 ---------------------------------------------8TH-QUERY--------------------------------------------------
 //Quanti sono gli insegnanti che non hanno un numero di telefono? (50)//
