@@ -3,7 +3,7 @@
 
 SELECT COUNT(id), YEAR(enrolment_date) AS Anno
 FROM students
-GROUP BY YEAR(enrolment_date)
+GROUP BY YEAR(enrolment_date) //oppure GROUP BY Anno
 --------------------------------------------2ND-QUERY-GROUPBY------------------------------------------------
 //Contare gli insegnanti che hanno l'ufficio nello stesso edificio//
 
@@ -20,7 +20,7 @@ GROUP BY exam_id
 --------------------------------------------4TH-QUERY-GROUPBY------------------------------------------------
 //Contare quanti corsi di laurea ci sono per ogni dipartimento//
 
-SELECT count(id)
+SELECT count(id), department_id
 FROM degrees
 GROUP BY department_id
 
