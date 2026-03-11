@@ -88,3 +88,15 @@ ORDER BY teachers.name, teachers.name
 //BONUS: Selezionare per ogni studente il numero di tentativi sostenuti per ogni esame, stampando anche 
 il voto massimo. Successivamente, filtrare i tentativi con voto minimo 18. //
 
+SELECT 
+	students.id, 
+	students.surname, 
+	students.name, 
+	count(exam_id) as tentativi, 
+	max(exam_student.vote) as max_vote
+FROM db_university.students
+JOIN exam_student
+ON students.id = exam_student.student_id
+WHERE exam_student.vote >= 18
+
+    ---- 4897 rows ----
